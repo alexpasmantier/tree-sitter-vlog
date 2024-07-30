@@ -55,6 +55,6 @@ module.exports = grammar({
 
     line_number: ($) => /\d+/,
 
-    message: ($) => /.*/,
+    message: ($) => repeat1(choice(/./, "\n")),
   },
 });

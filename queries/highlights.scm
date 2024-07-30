@@ -8,7 +8,7 @@
 (#eq? @comment.todo "INFO"))
 
 ((log_level) @comment.warning
-(#eq? @comment.warn "WARN"))
+(#eq? @comment.warning "WARN"))
 
 ((log_level) @comment.error
 (#eq? @comment.error "ERROR"))
@@ -17,6 +17,6 @@
 (#eq? @label "FATAL"))
 
 (timestamp) @property
-(file_path) @function
-(line_number) @variable
+(file_path) @type
+(line_number) @keyword
 (message) @string
