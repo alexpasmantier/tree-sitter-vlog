@@ -38,7 +38,11 @@
   "tree-sitter": [
     {
       "scope": "source.vlog",
-      "injection-regex": "^vlog$"
+      "file-types": [
+        "vlog"
+      ],
+      "injection-regex": "^vlog$",
+      "highlights": "queries/highlights.scm"
     }
   ]
 }

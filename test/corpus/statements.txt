@@ -1,0 +1,173 @@
+=================
+TRACE LOG MESSAGE
+=================
+
+[TRACE Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
+
+=================
+DEBUG LOG MESSAGE
+=================
+
+[DEBUG Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
+
+=================
+INFO LOG MESSAGE
+=================
+
+[INFO Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
+
+=================
+WARN LOG MESSAGE
+=================
+
+[WARN Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
+
+=================
+ERROR LOG MESSAGE
+=================
+
+[ERROR Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
+
+=================
+FATAL LOG MESSAGE
+=================
+
+[FATAL Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
+
+
+====================
+SEVERAL LOG MESSAGES
+====================
+
+[TRACE Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+[DEBUG Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+[INFO Tue Jul 30 22:32:01 2024] /home/someone/code/some_file.lua:20: Some debug message
+
+---
+
+(log_file
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message))
+
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message))
+
+  (log_entry
+    (log_level)
+    (timestamp
+      (day_of_week)
+      (month)
+      (day)
+      (time)
+      (year))
+    (file_path)
+    (line_number)
+    (message)))
