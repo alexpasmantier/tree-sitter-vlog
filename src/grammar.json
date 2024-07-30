@@ -1,0 +1,248 @@
+{
+  "name": "vlog",
+  "rules": {
+    "log_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "log_entry"
+      }
+    },
+    "log_entry": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "["
+        },
+        {
+          "type": "SYMBOL",
+          "name": "log_level"
+        },
+        {
+          "type": "STRING",
+          "value": " "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "timestamp"
+        },
+        {
+          "type": "STRING",
+          "value": "] "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "file_path"
+        },
+        {
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "line_number"
+        },
+        {
+          "type": "STRING",
+          "value": ": "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "message"
+        }
+      ]
+    },
+    "log_level": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "TRACE"
+        },
+        {
+          "type": "STRING",
+          "value": "DEBUG"
+        },
+        {
+          "type": "STRING",
+          "value": "INFO"
+        },
+        {
+          "type": "STRING",
+          "value": "WARN"
+        },
+        {
+          "type": "STRING",
+          "value": "ERROR"
+        },
+        {
+          "type": "STRING",
+          "value": "FATAL"
+        }
+      ]
+    },
+    "timestamp": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "day_of_week"
+        },
+        {
+          "type": "STRING",
+          "value": " "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "month"
+        },
+        {
+          "type": "STRING",
+          "value": " "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "day"
+        },
+        {
+          "type": "STRING",
+          "value": " "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "time"
+        },
+        {
+          "type": "STRING",
+          "value": " "
+        },
+        {
+          "type": "SYMBOL",
+          "name": "year"
+        }
+      ]
+    },
+    "day_of_week": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Mon"
+        },
+        {
+          "type": "STRING",
+          "value": "Tue"
+        },
+        {
+          "type": "STRING",
+          "value": "Wed"
+        },
+        {
+          "type": "STRING",
+          "value": "Thu"
+        },
+        {
+          "type": "STRING",
+          "value": "Fri"
+        },
+        {
+          "type": "STRING",
+          "value": "Sat"
+        },
+        {
+          "type": "STRING",
+          "value": "Sun"
+        }
+      ]
+    },
+    "month": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Jan"
+        },
+        {
+          "type": "STRING",
+          "value": "Feb"
+        },
+        {
+          "type": "STRING",
+          "value": "Mar"
+        },
+        {
+          "type": "STRING",
+          "value": "Apr"
+        },
+        {
+          "type": "STRING",
+          "value": "May"
+        },
+        {
+          "type": "STRING",
+          "value": "Jun"
+        },
+        {
+          "type": "STRING",
+          "value": "Jul"
+        },
+        {
+          "type": "STRING",
+          "value": "Aug"
+        },
+        {
+          "type": "STRING",
+          "value": "Sep"
+        },
+        {
+          "type": "STRING",
+          "value": "Oct"
+        },
+        {
+          "type": "STRING",
+          "value": "Nov"
+        },
+        {
+          "type": "STRING",
+          "value": "Dec"
+        }
+      ]
+    },
+    "day": {
+      "type": "PATTERN",
+      "value": "\\d{1,2}"
+    },
+    "time": {
+      "type": "PATTERN",
+      "value": "\\d{2}:\\d{2}:\\d{2}"
+    },
+    "year": {
+      "type": "PATTERN",
+      "value": "\\d{4}"
+    },
+    "file_path": {
+      "type": "PATTERN",
+      "value": "[^:]+"
+    },
+    "line_number": {
+      "type": "PATTERN",
+      "value": "\\d+"
+    },
+    "message": {
+      "type": "PATTERN",
+      "value": ".*"
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}

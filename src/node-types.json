@@ -1,0 +1,238 @@
+[
+  {
+    "type": "day_of_week",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "log_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "file_path",
+          "named": true
+        },
+        {
+          "type": "line_number",
+          "named": true
+        },
+        {
+          "type": "log_level",
+          "named": true
+        },
+        {
+          "type": "message",
+          "named": true
+        },
+        {
+          "type": "timestamp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "log_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "log_entry",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "log_level",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "month",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "timestamp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "day",
+          "named": true
+        },
+        {
+          "type": "day_of_week",
+          "named": true
+        },
+        {
+          "type": "month",
+          "named": true
+        },
+        {
+          "type": "time",
+          "named": true
+        },
+        {
+          "type": "year",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": " ",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ": ",
+    "named": false
+  },
+  {
+    "type": "Apr",
+    "named": false
+  },
+  {
+    "type": "Aug",
+    "named": false
+  },
+  {
+    "type": "DEBUG",
+    "named": false
+  },
+  {
+    "type": "Dec",
+    "named": false
+  },
+  {
+    "type": "ERROR",
+    "named": false
+  },
+  {
+    "type": "FATAL",
+    "named": false
+  },
+  {
+    "type": "Feb",
+    "named": false
+  },
+  {
+    "type": "Fri",
+    "named": false
+  },
+  {
+    "type": "INFO",
+    "named": false
+  },
+  {
+    "type": "Jan",
+    "named": false
+  },
+  {
+    "type": "Jul",
+    "named": false
+  },
+  {
+    "type": "Jun",
+    "named": false
+  },
+  {
+    "type": "Mar",
+    "named": false
+  },
+  {
+    "type": "May",
+    "named": false
+  },
+  {
+    "type": "Mon",
+    "named": false
+  },
+  {
+    "type": "Nov",
+    "named": false
+  },
+  {
+    "type": "Oct",
+    "named": false
+  },
+  {
+    "type": "Sat",
+    "named": false
+  },
+  {
+    "type": "Sep",
+    "named": false
+  },
+  {
+    "type": "Sun",
+    "named": false
+  },
+  {
+    "type": "TRACE",
+    "named": false
+  },
+  {
+    "type": "Thu",
+    "named": false
+  },
+  {
+    "type": "Tue",
+    "named": false
+  },
+  {
+    "type": "WARN",
+    "named": false
+  },
+  {
+    "type": "Wed",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "] ",
+    "named": false
+  },
+  {
+    "type": "day",
+    "named": true
+  },
+  {
+    "type": "file_path",
+    "named": true
+  },
+  {
+    "type": "line_number",
+    "named": true
+  },
+  {
+    "type": "message",
+    "named": true
+  },
+  {
+    "type": "time",
+    "named": true
+  },
+  {
+    "type": "year",
+    "named": true
+  }
+]
