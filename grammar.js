@@ -22,7 +22,7 @@ module.exports = grammar({
       ),
 
     log_level: ($) =>
-      choice("TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL"),
+      choice("TRACE", "DEBUG", "INFO ", "WARN ", "ERROR", "FATAL"),
 
     timestamp: ($) =>
       seq($.day_of_week, " ", $.month, " ", $.day, " ", $.time, " ", $.year),

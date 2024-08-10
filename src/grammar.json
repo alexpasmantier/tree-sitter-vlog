@@ -66,11 +66,11 @@
         },
         {
           "type": "STRING",
-          "value": "INFO"
+          "value": "INFO "
         },
         {
           "type": "STRING",
-          "value": "WARN"
+          "value": "WARN "
         },
         {
           "type": "STRING",
